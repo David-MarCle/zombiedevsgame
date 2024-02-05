@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/codigo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="codigo__logo">
+            <img id="codigo__img" src="img/logoZombieDevs.png" alt="">
+        </div>
+        <nav id="codigo__nav">
+            <a href="index.html">Inicio</a>
+            <a href="game.html">Game</a>
+            <a href="codigo.html">Código</a>
+            <a href="">Créditos</a>
+        </nav>
+    </header>
+    <main id="codigoMain">
+        <section id="codigoJS">
+            <h2 id="codigoJS__title">Código Javascript</h2>
+
+           <p class="codigoText">const decisions = [</p>
+    <p class="codigoText">
+        {
+      id: 1,
+      text: "Llevas horas estudiando Javascript y no te entereas de nada.¿Que mierda es un bucle For(;;)?",
+      text2: "¿Sigues estudiando?",
+      imageSrc: "img/protagonista.png",
+      okcome: "Bien hecho, solo te quedan 10 años para entender Javascript.                                                                                                                                                                                                                                                                                                                                                                                                 ",
+      kocome: "No, ya veras cuando empieces con React",
+      isCorrect: true,
+    },</p>
+    <p class="codigoText">{
+      id: 2,
+      text: "Te entra un meme en tu ordenador.",
+      text2: "¿Te hace gracia?",
+      imageSrc: "img/memeMerge.jpg",
+      okcome: "Bien, ya empiezas a reirte con los chistes de Friki",
+      kocome: "Bueno, llevas pocos merges, ya lo entenderas",
+      isCorrect: true,
+    },
+    ]</p>
+    <p class="codigoText__comment">
+        <span>Explicación: </span>Creamos un array, donde vamos a guardar todo lo que va dentro de las tarjetas:id (para identificarlas y luego ordenarlas), imagen, text(fragmento de la historia), text2(pregunta), Okcome(el comentario si es correcto), KoCome(elcomentario si es incorrecto) y isCorrect(si es correcto o incorrecto con boleano True o False)
+    </p>
+    <p class="codigoText">decisions.sort((a, b) => a.id - b.id);</p>
+    <p class="codigoText__comment">
+        <span>Explicación: </span>decisions: Este es un array que contiene objetos que tienen una propiedad id.
+        .sort(): Este es un método utilizado para ordenar los elementos de un array.
+        (a, b) => a.id - b.id: Esta es una función de flecha utilizada como criterio de ordenamiento. Toma dos parámetros, a y b, que representan dos elementos que se están comparando. La función devuelve el resultado de restar el valor de id de b al valor de id de a. Esto ordenará el array en orden ascendente basándose en la propiedad id.
+        Después de aplicar esta función de ordenamiento, el array decisions quedará reorganizado en orden ascendente según la propiedad id de cada objeto.</p>
+        <p class="codigoText">const gameContainer = document.getElementById("game-container");</p>   
+        <p class="codigoText__comment"> <span>Explicación: </span>Aquí, se está declarando una constante llamada gameContainer que representa un elemento HTML con el id "game-container". Este elemento es un contenedor donde vamos a crear las partes de nuestra Card.</p>
+          <p class="codigoText">
+            let currentIndex = 0;
+            let score = 5;
+            const threshold = 100;
+        </p> 
+        <p class="codigoText__comment">
+            <span>Explicación: </span>
+        </p>     
+
+        </section>
+
+    </main>
+</body>
+</html>

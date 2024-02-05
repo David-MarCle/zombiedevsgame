@@ -1,0 +1,44 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/FondoZombies.jpg");
+background-size: contain;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-family: 'VT323', monospace;
+}
+
+#indexMain{
+   
+ margin-top:1rem ;
+width: 60rem;
+height: 40rem;
+background-color: black;
+
+color: white;
+border: .7rem solid grey;
+}
+#indexContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#indexLogo{
+width: 15rem;
+margin-top: 3rem;
+}
+.indexTitle{
+font-size: 8rem;
+
+}
+#indexButton{
+    background-color: red;
+    padding: 2rem 4rem;
+    color: white;
+    font-size: 4.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    border: .3rem solid white;
+}
